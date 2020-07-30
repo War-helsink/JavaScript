@@ -114,6 +114,7 @@ function Accumulator(value) {
   };
 }
 
+
 //Callback - ето функция которая выполнится после выполнения дрегой фенкции 
 function first() {
   setTimeout(function () {
