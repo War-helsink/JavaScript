@@ -198,4 +198,24 @@ div.classList.add('test');
 
 document.body.insertBefore(div,  ionblocks[2]);
 // box.removeChild(classteg[0]);
-document.body.replaceChild(div2,ionblocks[0]);
+document.body.replaceChild(div2, ionblocks[0]);
+
+
+
+
+//Call context
+let user = {
+  name:'John'
+};
+
+function sayName(surname) {
+  console.log(this);
+  console.log(this.name + ' ' + surname);
+}
+function count(number) {
+  return this * number;
+}
+
+console.log(sayName.call(user, 'Smith'));
+console.log(sayName.apply(user, ['Snow']));
+let double = count.bind(2);
