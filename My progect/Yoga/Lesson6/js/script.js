@@ -150,7 +150,7 @@ window.addEventListener("DOMContentLoaded", function () {
               resolve();
             }
             else if (this.request.readyState == 4 && this.request.status == 200) {
-              resole();
+              resolve();
             }
             else {
               
