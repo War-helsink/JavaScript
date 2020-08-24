@@ -134,7 +134,7 @@ window.addEventListener("DOMContentLoaded", function () {
   
           
           this.request = new XMLHttpRequest();
-          this.request.open('POST', 'http://localhost/server.php');
+          this.request.open('POST', '/server.php');
           this.request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
           let formData = new FormData(this.form);
           let obj = {};
