@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    justify-self: center;
+    align-items:center;
+}
+header.header{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 20px auto;
+    max-width: 1270px;
+}
+div.content{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items:center;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+div.form{
+    max-width: 1270px;
+    margin: 20px auto;
+}
+ul.content{
+    list-style: none none none;
+}
+button{
+    margin:5px;
+}  
