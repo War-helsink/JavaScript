@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time-formatted</title>
+</head>
+<body>
+    <time-formatted id="elem"
+        year="numeric" month="long" day="numeric"
+        hour="numeric" minute="numeric" second="numeric"
+        time-zone-name="short"
+    ></time-formatted>
+
+    <script src="time-formatted.js"></script>
+
+    <script>
+        elem.date = setInterval(() => elem.setAttribute('datetime', new Date()), 1000);
+    </script>
+    <script>
+        setTimeout(()=>{
+            let elements = document.querySelector('time-formatted');
+            document.body.removeChild(elements);
+        },5000);
+    </script>
+</body>
+</html>
